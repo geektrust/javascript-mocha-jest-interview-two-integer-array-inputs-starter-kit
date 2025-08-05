@@ -6,21 +6,23 @@
 function main() {
     const input = process.argv.slice(2)
     if (input.length === 0) {
-        throw new Error("no command line arguments passed")
+        throw new Error("No argument passed")
     }
-    var output = handle(input[0])
-    console.log(output)
+    const arr1 = JSON.parse(input[0])
+    const arr2 = JSON.parse(input[1])
+    handle(arr1, arr2)
 }
 
 
 /*
  * Use this method to write your solution. 
- * Make sure to print out the solution.
+ * arr1 - Integer array
+ * arr2 - Integer array
  */
-function handle(input) {
-    //TODO: implement the logic to handle each input and return the finall output at the end of the function.
-    return input
+function handle(arr1, arr2) {
+    console.log('arr1:', arr1)
+    console.log('arr2:', arr2)
+    //TODO: implement the logic to handle each input
 }
-
 
 main()
